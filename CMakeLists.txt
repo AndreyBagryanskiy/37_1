@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(myCalc main.cpp myCalc.ui myCalcMainWindows.h)
+add_executable(myCalc main.cpp myCalc.ui myCalcMainWindows.h myCalcMainWindows.cpp)
 target_link_libraries(myCalc
         Qt5::Core
         Qt5::Gui

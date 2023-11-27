@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>586</width>
-    <height>362</height>
+    <width>679</width>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -242,7 +242,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>586</width>
+     <width>679</width>
      <height>21</height>
     </rect>
    </property>
@@ -259,7 +259,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>263</x>
-     <y>294</y>
+     <y>324</y>
     </hint>
     <hint type="destinationlabel">
      <x>205</x>
@@ -274,8 +274,8 @@
    <slot>multBut()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>335</x>
-     <y>286</y>
+     <x>407</x>
+     <y>324</y>
     </hint>
     <hint type="destinationlabel">
      <x>347</x>
@@ -290,11 +290,11 @@
    <slot>divBut()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>472</x>
-     <y>293</y>
+     <x>563</x>
+     <y>324</y>
     </hint>
     <hint type="destinationlabel">
-     <x>473</x>
+     <x>464</x>
      <y>336</y>
     </hint>
    </hints>
@@ -307,11 +307,43 @@
    <hints>
     <hint type="sourcelabel">
      <x>89</x>
-     <y>321</y>
+     <y>324</y>
     </hint>
     <hint type="destinationlabel">
      <x>40</x>
      <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>line1</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>line_1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>line2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>line_2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>26</y>
     </hint>
    </hints>
   </connection>
@@ -321,8 +353,8 @@
   <slot>divBut()</slot>
   <slot>multBut()</slot>
   <slot>subBut()</slot>
-  <slot>line1()</slot>
-  <slot>line2()</slot>
+  <slot>line_1()</slot>
+  <slot>line_2()</slot>
   <slot>lineRes()</slot>
   <slot>lab()</slot>
  </slots>

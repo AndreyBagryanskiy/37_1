@@ -7,7 +7,10 @@ int main(int argc, char *argv[]) {
     Ui::MainWindow calc;
     calc.setupUi(&window);
     window.label = calc.label;
-   
+    window.lineResult = calc.lineResult;
+    window.line1 = calc.line1;
+    window.line2 = calc.line2;
+    
     window.show();
     app.exec();
 }
