@@ -231,6 +231,12 @@
           <bold>false</bold>
          </font>
         </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string notr="true"/>
+        </property>
        </widget>
       </item>
      </layout>

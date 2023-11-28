@@ -1,10 +1,7 @@
 #include "myCalcMainWindows.h"
 
-MyCalcMainWindow::MyCalcMainWindow(QWidget* parent = nullptr): QMainWindow(parent){
-    line1->setValidator(doubleValidator);
-    line2->setValidator(doubleValidator);
-};
-
+ MyCalcMainWindow::MyCalcMainWindow(QWidget *parent) : QMainWindow(parent){};
+ 
 
 void MyCalcMainWindow::addBut(){
     label->setText("+");
@@ -21,13 +18,23 @@ void MyCalcMainWindow::multBut(){
     result = a * b;
     lineResult->setText(QString::number(result));
 };
-void MyCalcMainWindow::divBut(){label->setText(" /");};
+void MyCalcMainWindow::divBut(){
+    label->setText(" /");
+    if(b == 0) lineResult->setText("ERROR!");
+    else{
+        result = a / b;
+        lineResult->setText(QString::number(result));
+    }
+};
    
 void MyCalcMainWindow::line_1(){
     a = line1->text().toDouble();
-    lineResult->setText(QString::number(result));
+    label->setText(" ");
+    lineResult->setText("");
+    
 };
 void MyCalcMainWindow::line_2(){
     b = line2->text().toDouble();
-    lineResult->setText(QString::number(result));
+    label->setText(" ");
+    lineResult->setText("");
 };

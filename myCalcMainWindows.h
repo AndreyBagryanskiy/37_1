@@ -1,7 +1,7 @@
 #pragma once
+#include "./ui_myCalc.h"
 #include <QMainWindow>
 #include <QtWidgets/QLabel>
-#include <QDoubleValidator>
 #include <QtWidgets/QLineEdit>
 
 class MyCalcMainWindow : public QMainWindow{
@@ -13,7 +13,8 @@ public:
     QLineEdit *line1 = nullptr;
     QLineEdit *line2 = nullptr;
 
-    MyCalcMainWindow(QWidget* parent = nullptr);
+    MyCalcMainWindow(QWidget *parent = nullptr);
+
 public slots:
    void addBut();
    void subBut();
@@ -23,5 +24,5 @@ public slots:
    void line_2();
 private:
     double a{0.00}, b{0.00}, result{0.00};
-    QDoubleValidator doubleValidator;
 };
+
